@@ -5,12 +5,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- fontawesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -53,7 +58,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="bg-[#F5FFF6] h-[100vh]">
         <!-- hero  section -->
         <section class="hero-section bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center p-8 ">
             <div class="w-11/12 mx-auto text-white">
@@ -66,8 +71,374 @@
 
         </section>
 
+        <!-- services section  -->
+        <section class="services-section bg-[#F5FFF6] py-10">
+            <div class="service-section-container grid grid-cols-12 w-11/12 mx-auto gap-3  ">
+                <div class="card-section grid grid-cols-3 gap-x-2 gap-y-5 col-span-9 ">
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
 
 
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm p-3 ">
+                        <div class="flex justify-between items-center">
+                            <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-xl">
+                                <img class="w-[50%]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <span><button class="btn btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button></span>
+                        </div>
+                        <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
+                        <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
+                            <span>All</span>
+                        </div>
+                        <div class=" flex justify-between gap-2 mt-5">
+                            <!-- <button class="btn btn-outline py-3 px-10 w-[49%] "><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline  w-[49%] bg-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button> -->
+                            <button
+                                class="text-center  py-1 w-full rounded-lg border text-gray-400 border-gray-200 hover:border-transparent hover:bg-black  hover:text-white  ease-out duration-75"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="text-center  py-1 w-full rounded-lg  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 "><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="history-section  p-3  col-span-3  card bg-base-100 shadow-sm ">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex">
+                            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                            <h2 class="ml-2">Call History</h2>
+                        </div>
+                        <button
+                            class="text-center  py-2 px-4  rounded-full  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 ">Clear</button>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 bg-[#FAFAFA] rounded-lg">
+                        <div class=" ">
+                            <h2 class="font-semibold ">Fire Service Number</h2>
+                            <p class="text-[#5C5C5C]">999</p>
+                        </div>
+                        <span class="text-[#111111]">11:36:58 AM</span>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
 
     </main>
 
