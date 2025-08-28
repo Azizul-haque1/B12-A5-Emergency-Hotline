@@ -103,8 +103,6 @@ for(const callBtn of callBtns){
             })
        }
 
-        allData.push(data); 
-
         const historyContainer = document.getElementById('history-conttainer')
 
         const div = document.createElement('div')
@@ -124,6 +122,15 @@ for(const callBtn of callBtns){
     })
 }
 
+
+// clear button functionality 
+
+document.getElementById('btn-clear')
+    .addEventListener('click',function(){
+        const historyContainer = getId('history-conttainer');
+        historyContainer.innerHTML = ''
+
+    })
 
 
 
