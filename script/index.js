@@ -20,21 +20,47 @@ function setInnerText (id , value){
 
 }
 
-
+// heart counter functionality 
 
 const availableHeartCounter = getInnerTextToNumber('heart-counter')
 const heartCounter  = getInnerText('heart-counter')
 
-let count = 0;
+let heartCount = 0;
 const hearts = document.getElementsByClassName('btn-circle')
 
 for(const heart of hearts){
     heart.addEventListener('click', function(){
-       count = count + 1;
-       document.getElementById('heart-counter').innerText = count;
-       console.log('counter:', count);
+       heartCount = heartCount + 1;
+       document.getElementById('heart-counter').innerText = heartCount;
+       console.log('counter:', heartCount);
 })
 }
 
 
-// console.log('js connect');
+// Copy button functionality 
+
+const copyBtns  = document.getElementsByClassName('btn-copy')
+let copyCount  = 0;
+
+for(const copyBtn of copyBtns){
+    copyBtn.addEventListener('click', function(){
+        const number = copyBtn.parentNode.parentNode.children[3].innerText;
+        console.log(number);
+        copyCount += 1;
+        setInnerText('copy-counter', copyCount);
+        console.log(copyCount);
+        navigator.clipboard.writeText(number).then(function(){
+            alert(`Number copied: ${number}` )
+
+        }, function(err){
+            alert('Failed to copy ' + err)
+        }
+    );
+
+
+        
+    })
+}
+
+
+
