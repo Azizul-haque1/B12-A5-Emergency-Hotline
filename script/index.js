@@ -92,17 +92,15 @@ for(const callBtn of callBtns){
 
         // history add
 
-        const data = {
-            title:subTtile,
-            phone:seriveNumber,
-            date: new Date().toLocaleTimeString([], {
+        const now  = new Date().toLocaleTimeString('en-US', {
+           timeZone: 'Asia/Dhaka',
             hour: '2-digit',
             minute: '2-digit',
-            second:'2-digit',
+            second: '2-digit',
             hour12: true
             })
-       }
 
+            // history functionality 
         const historyContainer = document.getElementById('history-conttainer')
 
         const div = document.createElement('div')
@@ -110,10 +108,10 @@ for(const callBtn of callBtns){
         div.innerHTML = `
             <div class="flex items-center justify-between p-3 bg-[#FAFAFA] rounded-lg">
                 <div class=" ">
-                    <h2 class="font-semibold ">Fire Service Number</h2>
-                        <p class="text-[#5C5C5C]">999</p>
+                    <h2 class="font-semibold ">${subTtile}</h2>
+                        <p class="text-[#5C5C5C]">${seriveNumber}</p>
                     </div>
-                        <span class="text-[#111111]">11:36:58 AM</span>
+                        <span class="text-[#111111]">${now}</span>
                 </div>
 
         `
