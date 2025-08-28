@@ -44,7 +44,7 @@
                     <img src="./assets/heart.png" class="w-6" alt="">
                 </div>
                 <div class="flex bg-[#41ff6b1a] py-3 px-7 rounded-2xl gap-2 items-center justify-center">
-                    <span class="font-bold">100</span>
+                    <span id="coin-id" class="font-bold">100</span>
                     <img src="./assets/coin.png" class="w-6" alt="">
                 </div>
                 <div class="flex bg-[#00A63E] text-white py-3 px-7 rounded-2xl gap-2 items-center justify-center">
@@ -90,7 +90,7 @@
                                 </button></span>
                         </div>
                         <h2 class="text-xl font-bold mt-4">National Emergency Number</h2>
-                        <p class="text-[#5C5C5C]">National Emergency</p>
+                        <p class="text-[#5C5C5C]">National Emergency Service</p>
                         <h2 class="text-3xl font-bold mt-5 mb-1">999</h2>
                         <div class=" px-4 py-2 w-[50px] bg-[#F2F2F2] flex items-center justify-center rounded-3xl">
                             <span>All</span>
@@ -429,23 +429,19 @@
 
 
                 </div>
+
+                <!-- history section -->
                 <div class="history-section  p-3  col-span-3  card bg-base-100 shadow-sm ">
                     <div class="flex justify-between items-center mb-4">
                         <div class="flex">
                             <span><i class="fa-solid fa-clock-rotate-left"></i></span>
                             <h2 class="ml-2">Call History</h2>
                         </div>
-                        <button
+                        <button id="btn-clear"
                             class="text-center  py-2 px-4  rounded-full  bg-[#00A63E] text-white border border-transparent  hover:bg-gray-500  hover:ease-out duration-75 ">Clear</button>
                     </div>
+                    <div id="history-conttainer" class="grid grid-cols-1 gap-y-1"></div>
 
-                    <div class="flex items-center justify-between p-3 bg-[#FAFAFA] rounded-lg">
-                        <div class=" ">
-                            <h2 class="font-semibold ">Fire Service Number</h2>
-                            <p class="text-[#5C5C5C]">999</p>
-                        </div>
-                        <span class="text-[#111111]">11:36:58 AM</span>
-                    </div>
 
 
                 </div>

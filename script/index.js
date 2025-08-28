@@ -1,3 +1,5 @@
+const  allData = [];
+
 function getId(id){
    const foundId = document.getElementById(id);
    return foundId;
@@ -61,6 +63,71 @@ for(const copyBtn of copyBtns){
         
     })
 }
+
+
+
+// Call button functionality 
+
+const callBtns= document.getElementsByClassName('btn-call');
+
+for(const callBtn of callBtns){
+    callBtn.addEventListener('click', function(){
+
+        const avaibleCoin = getInnerTextToNumber('coin-id')
+        console.log(avaibleCoin);
+        const seriveNumber = callBtn.parentNode.parentNode.children[3].innerText;
+        console.log(seriveNumber);
+        const subTtile = callBtn.parentNode.parentNode.children[2].innerText
+        console.log(subTtile);
+
+        if(avaibleCoin < 20){
+            alert(`You don't have enough coins! You need at least 20 coins to make a call.`)
+            return;
+        }
+
+        const remainingCoin = avaibleCoin -   20;
+        console.log(remainingCoin);
+        setInnerText('coin-id', remainingCoin)
+        alert(`📞 Calling ${subTtile} ${seriveNumber}...`);
+
+        // history add
+
+        const data = {
+            title:subTtile,
+            phone:seriveNumber,
+            date: new Date().toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+            second:'2-digit',
+            hour12: true
+            })
+       }
+
+        allData.push(data); 
+
+        const historyContainer = document.getElementById('history-conttainer')
+
+        const div = document.createElement('div')
+        
+        div.innerHTML = `
+            <div class="flex items-center justify-between p-3 bg-[#FAFAFA] rounded-lg">
+                <div class=" ">
+                    <h2 class="font-semibold ">Fire Service Number</h2>
+                        <p class="text-[#5C5C5C]">999</p>
+                    </div>
+                        <span class="text-[#111111]">11:36:58 AM</span>
+                </div>
+
+        `
+        historyContainer.appendChild(div);
+
+    })
+}
+
+
+
+
+
 
 
 
